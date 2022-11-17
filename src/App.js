@@ -1,24 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
+ 
+import {BrowserRouter,Route,Routes} from 'react-router-dom'
+import Header from './components/Header';
+import Home from './components/Home';
+import {Toaster} from 'react-hot-toast'
+import Cart from './components/Cart';
+import Product from './components/Product';
+import Pro from './components/Pro';
+import "./index.css";
+import Footer from './components/Footer';
+import Login from './components/Login';
+ import {AuthProvider} from './context/AuthContext'
+import Signup from './components/Signup';
+import PrivateRoute from './components/PrivateRoute';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthProvider>
+     <BrowserRouter>
+     <Header/>
+
+      <Routes>
+     
+        <Route path='/login' element={<Login/>}/>
+        <Route path='/signup' element={<Signup/>}/>
+        <Route path='/' element={<PrivateRoute><Home/></PrivateRoute> }/>
+       <Route path='/cart' element={<PrivateRoute><Cart/></PrivateRoute>}/>
+       <Route path='/product/:id' element={ <PrivateRoute><Product/></PrivateRoute>}/>
+       <Route path='/pro/:id' element={<PrivateRoute><Pro/></PrivateRoute>}/>
+      </Routes>
+      
+      <Toaster/>
+      <Footer/>
+     </BrowserRouter>
+     </AuthProvider>
   );
 }
 
