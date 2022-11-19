@@ -78,8 +78,8 @@ const Header = () => {
         </a>
         <Link to={"/cart"}>
           <FiShoppingBag />
-          <p style={{    fontSize: large;
-    transform: translateY(-10px);}}>{cartItems.length}</p>
+          <p style={{    fontSize: large,
+    transform: translateY(-10px),}}>{cartItems.length}</p>
         </Link>
       </div>
     </nav>
