@@ -40,12 +40,15 @@ nav{
   box-shadow: 6px 4px 18px 1px;
 }
   .navdiv{
-  display: flex;
+   display: flex;
   flex-wrap: wrap;
   align-content: center;
   justify-content: flex-start;
   align-items: center;
   gap: 3rem;
+  line-height: 2rem;
+  font-size: larger;
+    
 }
 .navsecond{
   display: none;
