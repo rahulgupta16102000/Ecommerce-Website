@@ -70,50 +70,44 @@ const ChangeVal=(e)=>{
       <Link to={`/pro/${3}`}> 
 
         <div className="seconddiv" id="home">
-          <img style={{width:'200px',height:'200p'}}
-            src="https://api.lorem.space/image/furniture?w=640&h=480&r=4041"
+          <img style={{width:'200px',height:'200px'}}
+            src="https://images.pexels.com/photos/1366872/pexels-photo-1366872.jpeg?auto=compress&cs=tinysrgb&w=600"
             alt=""
           />
-          <h3>Furniture</h3>
+          <h3 style={{color:'black'}}>Furniture</h3>
         </div>
       </Link>
       <Link to={`/pro/${1}`}>
  
         <div className="seconddiv">
-          <img style={{width:'200px',height:'200p'}}
-            src="https://api.lorem.space/image/fashion?w=640&h=480&r=591"
+          <img style={{width:'200px',height:'200px'}}
+            src="https://img.freepik.com/free-photo/clothing-rack-with-hawaiian-shirts-with-floral-print-hangers-hat_23-2149366082.jpg?w=360&t=st=1686327154~exp=1686327754~hmac=a4d2e089340f853cf6b14948d56c0e9cdb1249439cbac28d135aa4cf496156c2"
             alt=""
           />
-          <h3>Clothes</h3>
+          <h3 style={{color:'black'}}>Clothes</h3>
         </div>
       </Link>
       <Link to={`/pro/${4}`}>
 
         <div className="seconddiv">
-          <img style={{width:'200px',height:'200p'}} 
-            src="https://api.lorem.space/image/shoes?w=640&h=480&r=8513"
+          <img style={{width:'200px',height:'200px'}} 
+            src="https://images.unsplash.com/photo-1543163521-1bf539c55dd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
             alt=""
           />
-          <h3>Shoes</h3>
+          <h3 style={{color:'black'}}>Shoes</h3>
         </div>
       </Link>
       <Link to={`/pro/${2}`}>
 
         <div className="seconddiv">
-          <img style={{width:'200px',height:'200p'}}
-            src="https://api.lorem.space/image/watch?w=640&h=480&r=8587"
+          <img style={{width:'200px',height:'200px'}}
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh77oT43_C1ntVc3jqxaPJukWxuZKR55csLQ&usqp=CAU"
             alt=""
           />
-          <h3>Electronics</h3>
+          <h3 style={{color:'black'}}>Electronics</h3>
         </div>
       </Link>
-      <Link to={`/pro/${5}`}>
-        
-        <div className="seconddiv">
-          <img style={{width:'200px',height:'200p'}} src="https://api.lorem.space/image?w=640&h=480&r=9727" alt="" />
-          <h3>Others</h3>
-        </div>
-      </Link>
+       
       </div>
       <div style={{display:'grid' }}>
       <div style={{marginTop: '2rem',marginBottom:'2rem',
@@ -164,7 +158,7 @@ const ProductCard = ({ name, id, price, handler, imgSrc }) => (
   
     <div>
       <Link to={`/product/${id}`}>
-        <img style={{width:'200px'}} src={imgSrc} alt="" />
+        <img style={{width:'200px',height:'200px'}} src={imgSrc} alt="" />
       </Link>
       <p>{name}</p>
       <h1>₹{price}</h1>

@@ -38,7 +38,7 @@ const ProductCard = ({ name, id, price, handler, imgSrc }) => (
   
     <div>
       <Link to={`/product/${id}`}>
-        <img style={{width:'200px'}} src={imgSrc} alt="" />
+        <img style={{width:'200px',height:'200px'}} src={imgSrc} alt="" />
       </Link>
       <p>{name}</p>
       <h1>${price}</h1>
